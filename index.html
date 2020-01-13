@@ -21,11 +21,12 @@
 	$("#init_sub").click(function(){
 			      	try {
      var akPush = new AKPush();
-     akPush.initSubscription(update) 
-    {
-	this.update = {
-		_fname: "Onotole"
-		       }
+     akPush.initSubscription(JSON.Stringify({
+    _fname: "Onotole"
+           }),JSON.Stringify({
+    _fname: "Onotole"
+           }))
+   
      }; // Show push subscribe browser popup
      // ...
  } catch (e) {
