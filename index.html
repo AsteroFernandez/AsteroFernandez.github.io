@@ -21,7 +21,9 @@
 	$("#init_sub").click(function(){
 			      	try {
      var akPush = new AKPush();
-     akPush.initSubscription(); // Show push subscribe browser popup
+     akPush.initSubscription(update){
+     update = {"_fname": "Onotole"}
+     }; // Show push subscribe browser popup
      // ...
  } catch (e) {
       console.log(e);
