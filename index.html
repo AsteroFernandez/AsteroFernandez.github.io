@@ -18,21 +18,20 @@
 
 
 <script>
-	$("#init_sub").click(function(){
-			      	try {
+  $("#init_sub").click(function(){
+              try {
      var akPush = new AKPush();
-     akPush.initSubscription(JSON.Stringify({
+     akPush..initSubscription(JSON.Stringify({
     _fname: "Onotole"
            }),JSON.Stringify({
     _fname: "Onotole"
-           }))
-   
-      // Show push subscribe browser popup
+           })) 
+        }; // Show push subscribe browser popup
      // ...
- }; catch (e) {
+  catch (e) {
       console.log(e);
  } 
-			       });
+             });
  
 </script>
 
