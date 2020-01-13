@@ -6,7 +6,7 @@
 <body>
 <center>
   OLOLO
-    
+  <button style="width:800px;height:75px" id="init_sub">подписаться</button>
 </center>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -16,6 +16,18 @@
 
 <script type="text/javascript" src="/ak-push.js"></script>
 <link rel="manifest" href="/manifest.json"></link>
+<script>
+	$("#init_sub").click(function(){
+			      	try {
+     var akPush = new AKPush();
+     akPush.initSubscription(); // Show push subscribe browser popup
+     // ...
+ } catch (e) {
+      console.log(e);
+ } 
+			       });
+ 
+</script>
 
 </body>
 </html>
