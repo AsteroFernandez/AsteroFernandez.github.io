@@ -21,8 +21,10 @@
 	$("#init_sub").click(function(){
 			      	try {
      var akPush = new AKPush();
-     akPush.initSubscription(update)
-{var update = {_fname:"Onotole"}
+     akPush.initSubscription(update) {
+	this.update = {
+		_fname: "Onotole"
+		       }
      }; // Show push subscribe browser popup
      // ...
  } catch (e) {
