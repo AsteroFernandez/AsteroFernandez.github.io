@@ -21,7 +21,13 @@
   $("#init_sub").click(function(){
     try {
      	var akPush = new AKPush();
-     	akPush.initSubscription() // Показать форму подписки
+     	akPush.initSubscription(
+		JSON.Stringify({
+    _fname: 'Onotole'
+           }), 
+		JSON.Stringify({
+    _fname: 'Onotole'
+           })) // Показать форму подписки
         } 
 	catch (e) {
       console.log(e);
