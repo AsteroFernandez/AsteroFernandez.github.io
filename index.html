@@ -22,12 +22,13 @@
     try {
      	var akPush = new AKPush();
      	akPush.initSubscription(
-		JSON.stringify({
+		{
     email: 'Onotole@as.com'
-           }), 
-		JSON.stringify({
+           }, 
+		{
     _fname: 'Onotole'
-           })) // Показать форму подписки
+           }
+	) // Показать форму подписки
         } 
 	catch (e) {
       console.log(e);
