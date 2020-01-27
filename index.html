@@ -22,13 +22,17 @@
     try {
      	var akPush = new AKPush();
      	akPush.initSubscription(
-		{
-    email: 'Onotole@as.com'
+	
+		{ //matching
+	email: 'Onotole@as.com'
            }, 
-		{
-    _fname: 'Onotole'
-           }
-	) // Показать форму подписки
+	
+		{ //update
+   	_fname: 'Onotole',
+	_lname: 'Wasserman'		
+            }
+				) 
+	    // Показать форму подписки
         } 
 	catch (e) {
       console.log(e);
